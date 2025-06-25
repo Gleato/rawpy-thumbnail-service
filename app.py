@@ -62,3 +62,7 @@ def generate_thumbnail():
 def health():
     return jsonify({"status": "ok"})
 
+# ✅ Required for Render: bind to 0.0.0.0 and use the PORT env var
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 3000))
+    app.run(host="0.0.0.0", port=port)

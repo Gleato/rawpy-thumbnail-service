@@ -47,7 +47,7 @@ def generate_thumbnail():
                 # Use faster processing settings for thumbnails
                 rgb = raw.postprocess(
                     use_camera_wb=True,           # Faster than auto WB
-                    half_size=False,               # Process at half resolution for speed
+                    half_size=True,               # Process at half resolution for speed
                     dcb_iterations=1,             # Reduce demosaicing iterations
                     output_bps=8                  # 8-bit output is sufficient for thumbnails
                 )

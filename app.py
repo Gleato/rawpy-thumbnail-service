@@ -3,7 +3,6 @@ import tempfile
 import requests
 from flask import Flask, request, jsonify
 import rawpy
-import imageio.v2 as imageio
 from PIL import Image
 import logging
 
@@ -75,7 +74,7 @@ def generate_thumbnail():
                 img_resized.save(
                     jpeg_path, 
                     'JPEG', 
-                    quality=85,                   # Good quality/size balance
+                    quality=100,                   # Good quality/size balance
                     optimize=True,                # Enable JPEG optimization
                     progressive=True              # Progressive JPEG for web
                 )

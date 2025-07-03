@@ -74,7 +74,7 @@ def generate_thumbnail():
                 img_resized.save(
                     jpeg_path, 
                     'JPEG', 
-                    quality=100,                   # Good quality/size balance
+                    quality=85,                   # Good quality/size balance
                     optimize=True,                # Enable JPEG optimization
                     progressive=True              # Progressive JPEG for web
                 )
